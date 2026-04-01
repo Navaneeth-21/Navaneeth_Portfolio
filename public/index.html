@@ -79,9 +79,11 @@
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">Hi👋, I'm <span
                             class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500">Navaneeth</span>
                     </h1>
-                    <h2 class="text-2xl md:text-3xl text-gray-300 mb-6">Software & Backend Developer</h2>
-                    <p class="text-gray-300 mb-8 max-w-lg">Passionate about building robust server-side applications
-                        with Node.js and Express.js, specializing in RESTful APIs, database optimization and Python.</p>
+                    <h2 class="text-2xl md:text-3xl text-gray-300 mb-6">Backend Developer</h2>
+                    <p class="text-gray-300 mb-8 max-w-lg">Backend developer specialising in Node.js, TypeScript, and
+                        real-time systems. Built a horizontally scalable chat API using Socket.io, Redis pub/sub, and
+                        PostgreSQL — deployed live. Experienced building REST APIs and AI-integrated services through
+                        internship work.</p>
                     <div class="flex space-x-4">
                         <a href="#projects"
                             class="inline-flex items-center px-6 py-3 text-base font-medium rounded-full text-white bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 shadow-lg transition duration-300">View
@@ -168,7 +170,7 @@
                                 </div>
                             </div>
                             <div class="flex space-x-4 justify-center">
-                                <a href="assets/files/Navaneeth_Resume (1).pdf"
+                                <a href="assets/files/Navaneeth_Resume_1.pdf" target="_blank"
                                     class="inline-flex items-center px-6 py-2 text-base font-medium rounded-full text-white bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 transition duration-300">
                                     <i class="fas fa-download mr-2"></i> Download CV
                                 </a>
@@ -184,210 +186,268 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+
+    <!-- Skills Section ----------------------------------------------------------------------->
+
     <section id="skills" class="section-animate py-20 bg-slate-900 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <!-- Heading -->
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold text-white mb-4">My <span
                         class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500">Skills</span>
                 </h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto rounded-full"></div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-6">Technical Skills</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium text-white">Node.js</span>
-                                <span class="text-gray-300">90%</span>
-                            </div>
-                            <div class="skill-bar bg-slate-700 rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full h-2"
-                                    style="width: 90%"></div>
-                            </div>
+
+            <!-- Skill category cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+
+                <!-- Backend -->
+                <div
+                    class="bg-slate-800 bg-opacity-50 rounded-2xl p-6 shadow-xl backdrop-blur-sm border border-indigo-400/10 hover:border-indigo-400/30 transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-indigo-500 bg-opacity-20 flex items-center justify-center mr-3">
+                            <i class="fas fa-server text-indigo-400"></i>
                         </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium text-white">Express.js</span>
-                                <span class="text-gray-300">90%</span>
-                            </div>
-                            <div class="skill-bar bg-slate-700 rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full h-2"
-                                    style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium text-white">JavaScript</span>
-                                <span class="text-gray-300">80%</span>
-                            </div>
-                            <div class="skill-bar bg-slate-700 rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full h-2"
-                                    style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium text-white">SQL</span>
-                                <span class="text-gray-300">90%</span>
-                            </div>
-                            <div class="skill-bar bg-slate-700 rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full h-2"
-                                    style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium text-white">Python</span>
-                                <span class="text-gray-300">95%</span>
-                            </div>
-                            <div class="skill-bar bg-slate-700 rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full h-2"
-                                    style="width: 95%"></div>
-                            </div>
-                        </div>
+                        <h3 class="text-lg font-semibold text-white">Backend</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <!-- <span class="skill-tag">Socket.io</span> -->
+                        <span class="skill-tag">REST APIs</span>
+                        <!-- <span class="skill-tag">WebSockets</span -->
+                        <span class="skill-tag">JWT Auth</span>
+                        <span class="skill-tag">Prisma ORM</span>
                     </div>
                 </div>
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-6">Professional Skills</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium text-white">Problem Solving</span>
-                                <span class="text-gray-300">90%</span>
-                            </div>
-                            <div class="skill-bar bg-slate-700 rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full h-2"
-                                    style="width: 90%"></div>
-                            </div>
+
+                <!-- Databases & Caching -->
+                <div
+                    class="bg-slate-800 bg-opacity-50 rounded-2xl p-6 shadow-xl backdrop-blur-sm border border-indigo-400/10 hover:border-indigo-400/30 transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-purple-500 bg-opacity-20 flex items-center justify-center mr-3">
+                            <i class="fas fa-database text-purple-400"></i>
                         </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium text-white">Agile Methodologies</span>
-                                <span class="text-gray-300">85%</span>
-                            </div>
-                            <div class="skill-bar bg-slate-700 rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full h-2"
-                                    style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="font-medium text-white">Self-Learning</span>
-                                <span class="text-gray-300">90%</span>
-                            </div>
-                            <div class="skill-bar bg-slate-700 rounded-full h-2">
-                                <div class="skill-progress bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full h-2"
-                                    style="width: 90%"></div>
-                            </div>
-                        </div>
+                        <h3 class="text-lg font-semibold text-white">Databases & Caching</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">SQL</span>
                     </div>
                 </div>
+
+                <!-- Languages -->
+                <div
+                    class="bg-slate-800 bg-opacity-50 rounded-2xl p-6 shadow-xl backdrop-blur-sm border border-indigo-400/10 hover:border-indigo-400/30 transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-yellow-500 bg-opacity-20 flex items-center justify-center mr-3">
+                            <i class="fas fa-code text-yellow-400"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-white">Languages</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div
+                    class="bg-slate-800 bg-opacity-50 rounded-2xl p-6 shadow-xl backdrop-blur-sm border border-indigo-400/10 hover:border-indigo-400/30 transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-orange-500 bg-opacity-20 flex items-center justify-center mr-3">
+                            <i class="fas fa-cloud text-orange-400"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-white">Cloud & Deployment</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">AWS (EC2)</span>
+                        <span class="skill-tag">Render</span>
+                        <span class="skill-tag">Supabase</span>
+                        <span class="skill-tag">Upstash</span>
+                        <span class="skill-tag">CI/CD basics</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div
+                    class="bg-slate-800 bg-opacity-50 rounded-2xl p-6 shadow-xl backdrop-blur-sm border border-indigo-400/10 hover:border-indigo-400/30 transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-green-500 bg-opacity-20 flex items-center justify-center mr-3">
+                            <i class="fas fa-tools text-green-400"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-white">Tools</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+
+                <!-- Concepts -->
+                <div
+                    class="bg-slate-800 bg-opacity-50 rounded-2xl p-6 shadow-xl backdrop-blur-sm border border-indigo-400/10 hover:border-indigo-400/30 transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 rounded-lg bg-blue-500 bg-opacity-20 flex items-center justify-center mr-3">
+                            <i class="fas fa-brain text-blue-400"></i>
+                        </div>
+                        <h3 class="text-lg font-semibold text-white">Concepts</h3>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Real-time Architecture</span>
+                        <span class="skill-tag">Distributed Systems</span>
+                        <span class="skill-tag">Caching Strategies</span>
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">Agile</span>
+                        <span class="skill-tag">ORM</span>
+                    </div>
+                </div>
+
             </div>
-            <div class="mt-16">
-                <h3 class="text-xl font-semibold text-white mb-6 text-center">Tools & Technologies</h3>
+
+            <!-- Tools & Technologies icon row -->
+            <div class="mt-4">
+                <h3 class="text-xl font-semibold text-white mb-8 text-center">Tools & Technologies</h3>
                 <div class="flex flex-wrap justify-center gap-8">
-                    <div class="flex flex-col items-center">
+
+                    <div class="flex flex-col items-center group">
                         <div
-                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm hover:bg-opacity-70 transition duration-300">
-                            <i class="fab fa-html5 text-3xl text-orange-500"></i>
-                        </div>
-                        <span class="text-gray-300">HTML</span>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div
-                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm hover:bg-opacity-70 transition duration-300">
-                            <i class="fab fa-css3-alt text-3xl text-blue-500"></i>
-                        </div>
-                        <span class="text-gray-300">CSS</span>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div
-                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm hover:bg-opacity-70 transition duration-300">
-                            <i class="fab fa-js text-3xl text-yellow-500"></i>
-                        </div>
-                        <span class="text-gray-300">JavaScript</span>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div
-                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm hover:bg-opacity-70 transition duration-300">
-                            <i class="fab fa-python text-3xl text-blue-400"></i>
-                        </div>
-                        <span class="text-gray-300">Python</span>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div
-                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm hover:bg-opacity-70 transition duration-300">
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
                             <i class="fab fa-node-js text-3xl text-green-500"></i>
                         </div>
-                        <span class="text-gray-300">Node.js</span>
+                        <span class="text-gray-300 text-sm">Node.js</span>
                     </div>
-                    <div class="flex flex-col items-center">
+
+                    <div class="flex flex-col items-center group">
                         <div
-                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm hover:bg-opacity-70 transition duration-300">
-                            <i class="fas fa-server text-3xl text-gray-600"></i>
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
+                            <i class="fab fa-js text-3xl text-yellow-500"></i>
                         </div>
-                        <span class="text-gray-300">Express.js</span>
+                        <span class="text-gray-300 text-sm">TypeScript</span>
                     </div>
-                    <div class="flex flex-col items-center">
+
+                    <div class="flex flex-col items-center group">
                         <div
-                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm hover:bg-opacity-70 transition duration-300">
-                            <i class="fas fa-database text-3xl text-green-600"></i>
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-server text-3xl text-gray-400"></i>
                         </div>
-                        <span class="text-gray-300">MongoDB</span>
+                        <span class="text-gray-300 text-sm">Express.js</span>
                     </div>
-                    <div class="flex flex-col items-center">
-                        <div
-                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm hover:bg-opacity-70 transition duration-300">
-                            <i class="fas fa-database text-3xl text-blue-600"></i>
+
+                    <!-- <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-bolt text-3xl text-indigo-400"></i>
                         </div>
-                        <span class="text-gray-300">MySQL</span>
-                    </div>
-                    <div class="flex flex-col items-center">
+                        <span class="text-gray-300 text-sm">Socket.io</span>
+                    </div> -->
+
+                    <div class="flex flex-col items-center group">
                         <div
-                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm hover:bg-opacity-70 transition duration-300">
-                            <i class="fas fa-database text-3xl text-green-500"></i>
-                        </div>
-                        <span class="text-gray-300">PostgreSQL</span>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div
-                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm hover:bg-opacity-70 transition duration-300">
-                            <i class="fas fa-cloud text-3xl text-blue-500"></i>
-                        </div>
-                        <span class="text-gray-300">REST API</span>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div
-                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm hover:bg-opacity-70 transition duration-300">
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
                             <i class="fas fa-memory text-3xl text-red-500"></i>
                         </div>
-                        <span class="text-gray-300">Redis</span>
+                        <span class="text-gray-300 text-sm">Redis</span>
                     </div>
-                    <div class="flex flex-col items-center">
+
+                    <div class="flex flex-col items-center group">
                         <div
-                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm hover:bg-opacity-70 transition duration-300">
-                            <i class="fas fa-code text-3xl text-purple-600"></i>
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-database text-3xl text-blue-400"></i>
                         </div>
-                        <span class="text-gray-300">GraphQL</span>
+                        <span class="text-gray-300 text-sm">PostgreSQL</span>
                     </div>
-                    <div class="flex flex-col items-center">
+
+                    <div class="flex flex-col items-center group">
                         <div
-                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm hover:bg-opacity-70 transition duration-300">
-                            <i class="fab fa-aws text-3xl text-orange-600"></i>
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-database text-3xl text-green-500"></i>
                         </div>
-                        <span class="text-gray-300">AWS</span>
+                        <span class="text-gray-300 text-sm">MongoDB</span>
                     </div>
-                    <div class="flex flex-col items-center">
+
+                    <div class="flex flex-col items-center group">
                         <div
-                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm hover:bg-opacity-70 transition duration-300">
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-database text-3xl text-blue-600"></i>
+                        </div>
+                        <span class="text-gray-300 text-sm">MySQL</span>
+                    </div>
+
+                    <div class="flex flex-col items-center group">
+                        <div
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
+                            <i class="fab fa-python text-3xl text-blue-400"></i>
+                        </div>
+                        <span class="text-gray-300 text-sm">Python</span>
+                    </div>
+
+                    <div class="flex flex-col items-center group">
+                        <div
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-cloud text-3xl text-blue-300"></i>
+                        </div>
+                        <span class="text-gray-300 text-sm">REST APIs</span>
+                    </div>
+
+                    <div class="flex flex-col items-center group">
+                        <div
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
+                            <i class="fab fa-aws text-3xl text-orange-500"></i>
+                        </div>
+                        <span class="text-gray-300 text-sm">AWS (EC2)</span>
+                    </div>
+
+                    <!-- <div class="flex flex-col items-center group">
+                        <div class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
+                            <i class="fab fa-docker text-3xl text-blue-500"></i>
+                        </div>
+                        <span class="text-gray-300 text-sm">Docker</span>
+                    </div> -->
+
+                    <div class="flex flex-col items-center group">
+                        <div
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
                             <i class="fab fa-git-alt text-3xl text-orange-600"></i>
                         </div>
-                        <span class="text-gray-300">Git</span>
+                        <span class="text-gray-300 text-sm">Git</span>
                     </div>
+
+                    <div class="flex flex-col items-center group">
+                        <div
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
+                            <i class="fab fa-html5 text-3xl text-orange-500"></i>
+                        </div>
+                        <span class="text-gray-300 text-sm">HTML</span>
+                    </div>
+
+                    <div class="flex flex-col items-center group">
+                        <div
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
+                            <i class="fab fa-css3-alt text-3xl text-blue-500"></i>
+                        </div>
+                        <span class="text-gray-300 text-sm">CSS</span>
+                    </div>
+
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -412,7 +472,7 @@
                         <div class="flip-card-front absolute w-full h-full">
                             <div class="relative group">
                                 <div class="overflow-hidden rounded-t-2xl">
-                                    <img src="assets/images/Auth_system.png" alt="Authentication System"
+                                    <img src="assets/images/Chat_app_api.png" alt="Chat Application API"
                                         class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
                                     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70">
                                     </div>
@@ -420,8 +480,8 @@
                                 <div class="absolute bottom-4 left-4 right-4">
                                     <div class="flex justify-between items-end">
                                         <div>
-                                            <h3 class="text-xl font-bold text-white">Authentication System</h3>
-                                            <p class="text-gray-300 text-sm">June 2024 - July 2024</p>
+                                            <h3 class="text-xl font-bold text-white">Real Time Chat API</h3>
+                                            <p class="text-gray-300 text-sm">Jan 2026 - Mar 2026</p>
                                         </div>
                                     </div>
                                 </div>
@@ -430,26 +490,39 @@
                         <!-- Back Side -->
                         <div
                             class="flip-card-back absolute w-full h-full bg-slate-700 bg-opacity-90 rounded-2xl p-6 flex flex-col justify-between">
-                            <div>
-                                <h3 class="text-xl font-bold text-white mb-2">Authentication System</h3>
-                                <p class="text-gray-300 mb-4">This is an Authentication System for Login and Register
-                                    Routes which uses JSON Web Tokens for authorization. The Application is connected to
-                                    the MySQL database to store user details in a structured format.</p>
+                            <div class="overflow-y-auto flex-1 pr-1" style="max-height: calc(100% - 70px);">
+                                <h3 class="text-xl font-bold text-white mb-2">Real-Time Chat API</h3>
+                                <p class="text-gray-300 mb-4">"Horizontally scalable chat API built with Node.js,
+                                    TypeScript, Socket.io, and Redis. Solved cross-server message delivery using Redis
+                                    pub/sub — messages sent to one server instance are received by clients on all
+                                    instances. JWT verification happens on the WebSocket handshake, not per-event.
+                                    Deployed live with Supabase (PostgreSQL), Upstash (Redis) and Render."</p>
                                 <div class="flex flex-wrap gap-2">
                                     <span
-                                        class="bg-indigo-900 bg-opacity-50 text-indigo-400 px-3 py-1 rounded-full text-xs">MySQL</span>
+                                        class="bg-indigo-900 bg-opacity-50 text-indigo-400 px-3 py-1 rounded-full text-xs">Express.js</span>
                                     <span
-                                        class="bg-blue-900 bg-opacity-50 text-blue-400 px-3 py-1 rounded-full text-xs">Express.js</span>
+                                        class="bg-blue-900 bg-opacity-50 text-blue-400 px-3 py-1 rounded-full text-xs">Socket.io</span>
                                     <span
-                                        class="bg-blue-900 bg-opacity-50 text-blue-400 px-3 py-1 rounded-full text-xs">JWT</span>
+                                        class="bg-blue-900 bg-opacity-50 text-blue-400 px-3 py-1 rounded-full text-xs">TypeScript</span>
+                                    <span
+                                        class="bg-blue-900 bg-opacity-50 text-blue-400 px-3 py-1 rounded-full text-xs">Redis</span>
+                                    <span
+                                        class="bg-blue-900 bg-opacity-50 text-blue-400 px-3 py-1 rounded-full text-xs">PostgreSQL
+                                        ( Via Prisma ORM)</span>
                                     <span
                                         class="bg-blue-900 bg-opacity-50 text-blue-400 px-3 py-1 rounded-full text-xs">REST
                                         API</span>
                                 </div>
                             </div>
-                            <div class="mt-4">
-                                <a href="https://github.com/Navaneeth-21/Auth_system-MYSQL-" target="_blank"
-                                    class="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center hover:bg-indigo-600 transition duration-300">
+                            <div class="flex gap-3 mt-4">
+                                <a href="https://github.com/Navaneeth-21/RealTime-Chat-API" target="_blank"
+                                    class="w-12 h-12 bg-slate-600 rounded-full flex items-center justify-center hover:bg-slate-500 transition duration-300"
+                                    title="GitHub">
+                                    <i class="fab fa-github text-white text-lg"></i>
+                                </a>
+                                <a href="https://realtime-chat-api-7vkn.onrender.com/health" target="_blank"
+                                    class="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center hover:bg-indigo-600 transition duration-300"
+                                    title="Live API">
                                     <i class="fas fa-external-link-alt text-white"></i>
                                 </a>
                             </div>
@@ -586,19 +659,55 @@
             <div class="relative">
                 <div class="bg-slate-800 bg-opacity-50 rounded-2xl p-6 shadow-xl backdrop-blur-sm">
                     <div class="flex flex-col sm:flex-row">
+
+                        <!-- Left - Role Info -->
                         <div class="sm:w-1/3 pr-8 mb-4 sm:mb-0">
+                            <div
+                                class="inline-block bg-indigo-500 bg-opacity-20 text-indigo-400 text-xs font-medium px-3 py-1 rounded-full mb-3">
+                                Mar 2025 - Jun 2025
+                            </div>
                             <h3 class="text-lg font-semibold text-white">Backend Intern</h3>
-                            <p class="text-indigo-400">8MH Organic</p>
-                            <p class="text-gray-300 text-sm">March 2025 - June 2025</p>
+                            <p class="text-indigo-400 font-medium">8MH Organic</p>
+                            <p class="text-gray-300 text-sm mt-1">Remote</p>
+
+                            <!-- Tech Tags -->
+                            <div class="flex flex-wrap gap-2 mt-4">
+                                <span
+                                    class="bg-green-900 bg-opacity-40 text-green-400 px-2 py-1 rounded text-xs">Node.js</span>
+                                <span
+                                    class="bg-blue-900 bg-opacity-40 text-blue-400 px-2 py-1 rounded text-xs">Express.js</span>
+                                <span
+                                    class="bg-blue-900 bg-opacity-40 text-blue-400 px-2 py-1 rounded text-xs">MySQL</span>
+                                <span
+                                    class="bg-green-900 bg-opacity-40 text-green-400 px-2 py-1 rounded text-xs">MongoDB</span>
+                                <span class="bg-purple-900 bg-opacity-40 text-purple-400 px-2 py-1 rounded text-xs">REST
+                                    APIs</span>
+                                <span class="bg-yellow-900 bg-opacity-40 text-yellow-400 px-2 py-1 rounded text-xs">NLP
+                                    / AI</span>
+                            </div>
                         </div>
-                        <div class="sm:w-2/3 pl-0 sm:pl-4">
+
+                        <!-- Right - Description -->
+                        <div class="sm:w-2/3 pl-0 sm:pl-6 sm:border-l sm:border-indigo-400/20">
                             <p class="text-gray-300 mb-4">Building and maintaining server-side applications using
-                                Node.js, Express.js, MySQL, and MongoDB, focusing on scalable and performant backend
+                                Node.js, Express.js, MySQL, and MongoDB, focusing on scalable and efficient backend
                                 solutions.</p>
-                            <ul class="list-disc pl-5 space-y-2 text-gray-300">
-                                <li>Developed RESTful APIs for web applications</li>
-                                <li>Optimized database queries for improved performance</li>
-                                <li>Integrated microservices for modular architecture</li>
+                            <ul class="space-y-3 text-gray-300">
+                                <li class="flex items-start gap-3">
+                                    <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-400 flex-shrink-0"></span>
+                                    <span>Developed and secured backend REST APIs using Node.js and Express.js,
+                                        implementing JWT-based authentication across all routes</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-400 flex-shrink-0"></span>
+                                    <span>Designed and integrated relational database schemas in MySQL for structured
+                                        product and user data</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-400 flex-shrink-0"></span>
+                                    <span>Integrated an AI chatbot using NLP to handle user queries and trigger
+                                        real-time website content changes</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -621,10 +730,11 @@
             <div class="slide-content grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div class="slide-card bg-slate-800 bg-opacity-50 rounded-2xl p-6 shadow-xl backdrop-blur-sm hover:shadow-2xl transition duration-300"
                     data-direction="zoom">
-                    <h3 class="text-lg font-semibold text-white">Responsive Web Design (FreeCodeCamp)</h3>
-                    <p class="text-gray-300 text-sm">January 2023</p>
-                    <p class="text-gray-300 mt-2">Skills: HTML5, CSS3</p>
-                    <a href="https://freecodecamp.org/certification/Navaneeth0612/responsive-web-design" target="_blank"
+                    <h3 class="text-lg font-semibold text-white">Developing Back-End Apps with Node.js and Express (IBM)
+                    </h3>
+                    <p class="text-gray-300 text-sm"> - 2025</p>
+                    <p class="text-gray-300 mt-2">Skills: Node.js, Express.js</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/NVS96F1SE6XC" target="_blank"
                         class="text-indigo-400 hover:text-indigo-600 font-medium flex items-center mt-4">
                         View Credential <i class="fas fa-arrow-right ml-2"></i>
                     </a>
@@ -651,18 +761,6 @@
                 </div>
                 <div class="slide-card bg-slate-800 bg-opacity-50 rounded-2xl p-6 shadow-xl backdrop-blur-sm hover:shadow-2xl transition duration-300"
                     data-direction="zoom">
-                    <h3 class="text-lg font-semibold text-white">From Relational Model (SQL) to MongoDB's Document Model
-                    </h3>
-                    <p class="text-gray-300 text-sm">April 2024</p>
-                    <p class="text-gray-300 mt-2">Skills: NoSQL, MongoDB</p>
-                    <a href="https://www.credly.com/badges/73b9a8a7-33a4-410d-87e5-67e2d70d7f41/linked_in_profile"
-                        target="_blank"
-                        class="text-indigo-400 hover:text-indigo-600 font-medium flex items-center mt-4">
-                        View Credential <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
-                <div class="slide-card bg-slate-800 bg-opacity-50 rounded-2xl p-6 shadow-xl backdrop-blur-sm hover:shadow-2xl transition duration-300"
-                    data-direction="zoom">
                     <h3 class="text-lg font-semibold text-white">Programming in Python (Meta)</h3>
                     <p class="text-gray-300 text-sm">May 2024</p>
                     <p class="text-gray-300 mt-2">Skills: Python</p>
@@ -673,7 +771,7 @@
                 </div>
             </div>
             <div class="text-center mt-12">
-                <a href="https://www.linkedin.com/in/navaneeth-g-3537b122a/details/certifications/"
+                <a href="https://www.linkedin.com/in/navaneeth-g-3537b122a/details/certifications/" target="_blank"
                     class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 shadow-lg transition duration-300">
                     View All Certifications <i class="fas fa-arrow-right ml-2"></i>
                 </a>
