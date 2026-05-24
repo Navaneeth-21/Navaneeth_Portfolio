@@ -122,7 +122,7 @@
                             class="bg-slate-800 bg-opacity-50 rounded-2xl p-8 shadow-xl backdrop-blur-sm border border-indigo-400/20">
                             <h3 class="text-2xl font-semibold text-white mb-4">Who am I?</h3>
                             <p class="text-gray-300 mb-6 leading-relaxed">
-                                I'm Gade Navaneeth, a Backend Web Developer passionate about Node.js and Express.js.
+                                I'm Gade Navaneeth, a Backend Web Developer passionate about Node.js and Nest.js.
                                 With expertise in building RESTful APIs and microservices, I specialize in writing
                                 clean, maintainable code and optimizing performance using both SQL and NoSQL databases.
 
@@ -215,6 +215,7 @@
                     </div>
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Nest.js</span>
                         <span class="skill-tag">Express.js</span>
                         <span class="skill-tag">TypeScript</span>
                         <!-- <span class="skill-tag">Socket.io</span> -->
@@ -338,6 +339,14 @@
                     <div class="flex flex-col items-center group">
                         <div
                             class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-layer-group text-3xl text-red-500"></i>
+                        </div>
+                        <span class="text-gray-300 text-sm">NestJS</span>
+                    </div>
+
+                    <div class="flex flex-col items-center group">
+                        <div
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
                             <i class="fab fa-js text-3xl text-yellow-500"></i>
                         </div>
                         <span class="text-gray-300 text-sm">TypeScript</span>
@@ -357,6 +366,13 @@
                         </div>
                         <span class="text-gray-300 text-sm">Socket.io</span>
                     </div> -->
+                    <div class="flex flex-col items-center group">
+                        <div
+                            class="w-16 h-16 bg-slate-800 bg-opacity-50 rounded-full shadow-md flex items-center justify-center mb-2 backdrop-blur-sm group-hover:bg-opacity-70 group-hover:scale-110 transition duration-300">
+                            <i class="fas fa-database text-3xl text-cyan-400"></i>
+                        </div>
+                        <span class="text-gray-300 text-sm">Prisma ORM</span>
+                    </div>
 
                     <div class="flex flex-col items-center group">
                         <div
@@ -537,7 +553,7 @@
                         <div class="flip-card-front absolute w-full h-full">
                             <div class="relative group">
                                 <div class="overflow-hidden rounded-t-2xl">
-                                    <img src="assets/images/User_management.png" alt="User Management API"
+                                    <img src="public\assets\images\Url_Shortner.png" alt="Url Shortner With Analytics"
                                         class="w-full h-48 object-cover group-hover:scale-110 transition duration-500">
                                     <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70">
                                     </div>
@@ -545,8 +561,8 @@
                                 <div class="absolute bottom-4 left-4 right-4">
                                     <div class="flex justify-between items-end">
                                         <div>
-                                            <h3 class="text-xl font-bold text-white">User Management API</h3>
-                                            <p class="text-gray-300 text-sm">July 2024</p>
+                                            <h3 class="text-xl font-bold text-white">Url Shortner With Analytics</h3>
+                                            <p class="text-gray-300 text-sm">May 2026</p>
                                         </div>
                                     </div>
                                 </div>
@@ -556,24 +572,36 @@
                         <div
                             class="flip-card-back absolute w-full h-full bg-slate-700 bg-opacity-90 rounded-2xl p-6 flex flex-col justify-between">
                             <div>
-                                <h3 class="text-xl font-bold text-white mb-2">User Management API</h3>
-                                <p class="text-gray-300 mb-4">This is a user management API which consists of all API
-                                    requests that can be sent to the user using Postman. Each API request is
-                                    authenticated using JWT. The testing was done using Jest and Supertest tools.</p>
+                                <h3 class="text-xl font-bold text-white mb-2">Url Shortner With Analytics</h3>
+                                <p class="text-gray-300 mb-4">Built a Production-ready Url-shortner using NestJs,
+                                    TypeScript, PostgreSQl, Prisma ORM and Redis. Implemented Url generation with
+                                    optional custom aliases and analytics to track total clicks and daily click
+                                    statistics.Integrated Redis caching and rate limiting for performance optimization
+                                    and protection.</p>
                                 <div class="flex flex-wrap gap-2">
                                     <span
                                         class="bg-green-900 bg-opacity-50 text-green-400 px-3 py-1 rounded-full text-xs">Node.js</span>
                                     <span
-                                        class="bg-yellow-900 bg-opacity-50 text-yellow-400 px-3 py-1 rounded-full text-xs">MongoDB</span>
+                                        class="bg-yellow-900 bg-opacity-50 text-yellow-400 px-3 py-1 rounded-full text-xs">NestJs</span>
                                     <span
-                                        class="bg-blue-900 bg-opacity-50 text-blue-400 px-3 py-1 rounded-full text-xs">Jest</span>
+                                        class="bg-blue-900 bg-opacity-50 text-blue-400 px-3 py-1 rounded-full text-xs">Prisma
+                                        ORM</span>
                                     <span
-                                        class="bg-blue-900 bg-opacity-50 text-blue-400 px-3 py-1 rounded-full text-xs">JWT</span>
+                                        class="bg-blue-900 bg-opacity-50 text-blue-400 px-3 py-1 rounded-full text-xs">PostgreSQL</span>
+                                    <span
+                                        class="bg-green-900 bg-opacity-50 text-green-400 px-3 py-1 rounded-full text-xs">Redis</span>
+
                                 </div>
                             </div>
-                            <div class="mt-4">
-                                <a href="https://github.com/Navaneeth-21/Worko-User-Management-API" target="_blank"
-                                    class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700 transition duration-300">
+                            <div class="flex gap-3 mt-4">
+                                <a href="https://github.com/Navaneeth-21/Url-Shortner-With-Analytics" target="_blank"
+                                    class="w-12 h-12 bg-slate-600 rounded-full flex items-center justify-center hover:bg-slate-500 transition duration-300"
+                                    title="GitHub">
+                                    <i class="fab fa-github text-white text-lg"></i>
+                                </a>
+                                <a href="https://url-shortner-with-analytics-ir2u.onrender.com/health" target="_blank"
+                                    class="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center hover:bg-indigo-600 transition duration-300"
+                                    title="Live API">
                                     <i class="fas fa-external-link-alt text-white"></i>
                                 </a>
                             </div>
